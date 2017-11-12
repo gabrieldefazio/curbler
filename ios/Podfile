@@ -1,7 +1,7 @@
 
 
 # Uncomment this line to define a global platform for your project
-# platform :ios, '9.0'
+  platform :ios, '9.0'
 
 target 'AirbnbClone' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
@@ -10,7 +10,8 @@ target 'AirbnbClone' do
   # Pods for MyProgram
    pod 'Yoga', path: "../node_modules/react-native/ReactCommon/yoga/Yoga.podspec"
    pod 'React', path: '../node_modules/react-native', :subspecs => [
-  'Core',
+  'Core'
+  'DevSupport',
   'RCTActionSheet',
   'RCTGeolocation',
   'RCTImage',
@@ -28,5 +29,5 @@ target 'AirbnbClone' do
 
 end
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+
 use_frameworks!
