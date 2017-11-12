@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Categories from '../components/explore/Categories';
@@ -82,7 +81,7 @@ class ExploreContainer extends Component {
         style={styles.scrollview}
         contentContainerStyle={styles.scrollViewContent}
       >
-        <Text style={styles.heading}>Explore the Curb</Text>
+        <Text style={styles.heading}>Explore your curb...</Text>
         <View style={styles.categories}>
           <Categories categories={categoriesList} />
         </View>

@@ -1,9 +1,3 @@
-/**
- * Airbnb Clone App
- *@author: Andy
- *@Url: http://imandy.ie
- */
-
 const categoriesList = [
   {
     name: 'Homes',

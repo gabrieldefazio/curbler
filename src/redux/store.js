@@ -1,9 +1,3 @@
-/**
- * Airbnb Clone App
- *@author: Andy
- *@Url: http://imandy.ie
- */
-
 import { compose, createStore, combineReducers, applyMiddleware} from 'redux';
 import { createLogger } from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';

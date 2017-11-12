@@ -1,9 +1,3 @@
-/**
- * Airbnb Clone App
- *@author: Andy
- *@Url: http://imandy.ie
- */
-
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -21,7 +15,7 @@ import {
   StyleSheet,
 } from 'react-native';
 
-let cardSize = 157;
+let cardSize = 158;
 let cardMargin = 6;
 
 export default class Listings extends Component {
@@ -34,19 +28,6 @@ export default class Listings extends Component {
     this.addToFavorite = this.addToFavorite.bind(this);
   }
   
-  getRandomColor() {
-    const colorsList = [
-      colors.gray02,
-      colors.darkOrange,
-      colors.black,
-      colors.brown01,
-      colors.blue,
-      colors.brown02,
-      colors.green,
-    ];
-    return colorsList[Math.floor(Math.random()*colorsList.length)];
-  }
-  
   addToFavorite(added, itemId) {
     this.props.onAddToFav(added, itemId);
   }
@@ -54,10 +35,10 @@ export default class Listings extends Component {
   componentWillMount() {
     const listings = this.props.listings;
     const listingsArray = [];
-    listings.map((val, i) => {
+    listings.map( listing => {
       listingsArray.push(
         <TouchableHighlight
-          key={val.id}
+          key={listing.id}
           style={styles.card}
         >
           <View style={styles.cardContent}>
@@ -67,24 +48,23 @@ export default class Listings extends Component {
                   callback={this.addToFavorite}
                   color={colors.white}
                   selectedColor={colors.pink}
-                  itemId={val.id}
+                  itemId={listing.id}
                 />
               </View>
             : null }
             <Image
               style={styles.image}
               resizeMode='contain'
-              source={val.photo}
+              source={listing.photo}
             />
-            <Text style={[{color: this.getRandomColor()},styles.listingType]}>{val.type}</Text>
             <Text
               style={styles.listingTitle}
               numberOfLines={2}
             >
-              {val.title}
+              {listing.title}
             </Text>
-            <Text style={styles.listingPrice}>€{val.price} {val.priceType}</Text>
-            <Stars votes={val.stars} size={10} color={colors.darkGreen} />
+            <Text style={styles.listingPrice}>{listing.borough}</Text>
+            <Stars rating={listing.stars} size={10} color={colors.darkGreen} />
           </View>
         </TouchableHighlight>
       );

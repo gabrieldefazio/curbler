@@ -1,9 +1,3 @@
-/**
- * Airbnb Clone App
- *@author: Andy
- *@Url: http://imandy.ie
- */
-
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import { transparentHeaderStyle } from '../styles/navigation';

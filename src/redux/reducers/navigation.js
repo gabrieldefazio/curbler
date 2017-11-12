@@ -1,5 +1,3 @@
-
-
 import createReducer from '../helpers/createReducer'
 import { NavigationActions } from 'react-navigation';
 import * as types from '../actions/types'

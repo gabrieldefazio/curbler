@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { characters } from './data';
+import { characters } from '../data/data.js';
 import Callout from './Callout';
 import MapView from 'react-native-maps';
 

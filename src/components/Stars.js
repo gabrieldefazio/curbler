@@ -1,9 +1,3 @@
-/**
- * Airbnb Clone App
- *@author: Andy
- *@Url: http://imandy.ie
- */
-
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -25,7 +19,7 @@ export default class Stars extends Component {
   }
 
   componentWillMount() {
-    const starsNumber = parseInt(this.props.votes);
+    const starsNumber = parseInt("132");
     const stars = [];
     for(let i = 0; i < 5; i++) {
       stars.push(
@@ -44,13 +38,13 @@ export default class Stars extends Component {
   }
 
   render() {
-    if (this.props.votes === '0') {
+    if (this.props.rating === '0') {
       return (
         <View></View>
       );
     }
 
-    const starsNumber = this.props.votes ? <Text style={styles.starsNumber}>{this.props.votes}</Text> : null;
+    const starsNumber = this.props.rating ? <Text style={styles.starsNumber}>{this.props.rating}</Text> : null;
     return (
       <View style={styles.wrapper}>
         <View style={styles.stars}>
@@ -63,7 +57,7 @@ export default class Stars extends Component {
 }
 
 Stars.propTypes = {
-  votes: PropTypes.string.isRequired,
+  rating: PropTypes.string.isRequired,
   size: PropTypes.number.isRequired,
   color: PropTypes.string.isRequired,
 };

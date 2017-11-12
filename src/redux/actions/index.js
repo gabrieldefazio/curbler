@@ -1,5 +1,3 @@
-
-
 // import * as LoggedOut from './loggedOut';
 import * as Favorite from './favorite';
 

@@ -1,9 +1,3 @@
-/**
- * Airbnb Clone App
- *@author: Andy
- *@Url: http://imandy.ie
- */
-
 import React, { Component } from 'react';
 import colors from '../styles/colors';
 import Icon from 'react-native-vector-icons/Ionicons';
