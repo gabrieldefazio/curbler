@@ -1,4 +1,5 @@
-
+use_frameworks!
+inhibit_all_warnings!
 
 # Uncomment this line to define a global platform for your project
   platform :ios, '9.0'
@@ -8,9 +9,13 @@ target 'AirbnbClone' do
   # use_frameworks!
 
   # Pods for MyProgram
-   pod 'Yoga', path: "../node_modules/react-native/ReactCommon/yoga/Yoga.podspec"
+    pod 'DoubleConversion', podspec: '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+    pod 'Folly', podspec: '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+    pod 'GLog', podspec: '../node_modules/react-native/third-party-podspecs/GLog.podspec'
+   pod 'Yoga', path: "../node_modules/react-native/ReactCommon/yoga/yoga.podspec"
    pod 'React', path: '../node_modules/react-native', :subspecs => [
-  'Core'
+  'Core',
+  'CxxBridge',
   'DevSupport',
   'RCTActionSheet',
   'RCTGeolocation',
@@ -30,4 +35,4 @@ target 'AirbnbClone' do
 end
 source 'https://github.com/CocoaPods/Specs.git'
 
-use_frameworks!
+
