@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { characters } from '../data/data.js';
 import Callout from './Callout';
-import MapView from 'react-native-maps';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 
 import {
   View,
@@ -32,6 +32,7 @@ export default class Map extends Component {
       <View style={styles.container}>
         {/* Map*/}
         <MapView
+          provider={PROVIDER_GOOGLE}
           style={styles.map}
           // Position on Manhattan, New York
           initialRegion={{

@@ -28,13 +28,13 @@
 		5741513B08824FCF924392F8 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C496F8C1B374D9F973A7780 /* FontAwesome.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		679C962B57A640C6B1369148 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C0A20AC6BF469F91B6956F /* SimpleLineIcons.ttf */; };
+		7D0F408472B5D22EDE296AD9 /* Pods_AirbnbClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C866A60A28FEECBEAC3E4093 /* Pods_AirbnbClone.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9A0B3052FEA644EB86FFB640 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99E35CD19F8540B08C8EE5C8 /* MaterialIcons.ttf */; };
 		9F793317F49E41D5936CDC5F /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E425BE91587C4406B7E81E95 /* Ionicons.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		AEE38BDD91734E329248BD77 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA7EDD7E5A8047379C299859 /* Octicons.ttf */; };
 		B3705002A20B4F4FB41D1ACF /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C5DD6AB38554E34BBF8DB6F /* MaterialCommunityIcons.ttf */; };
-		BE8842EA6245700B8FCB8CC0 /* libPods-AirbnbClone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA05F392AC71AC896451B7CD /* libPods-AirbnbClone.a */; };
 		C452170ACBE5427096825446 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1FDAF131DB4FA39108B5F2 /* libAirMaps.a */; };
 		D5EF3E064C714B5D871DCB3D /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B5B7DC02A74478AAF5AC25 /* libRNVectorIcons.a */; };
 		EF0F3DEF35B34C8E93F23DA6 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4371ED30C86346599844E7E3 /* Foundation.ttf */; };
@@ -318,7 +318,7 @@
 		A79EBA3EE60CD6327307DB46 /* Pods-AirbnbClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbnbClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirbnbClone/Pods-AirbnbClone.debug.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B3B5B7DC02A74478AAF5AC25 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
-		BA05F392AC71AC896451B7CD /* libPods-AirbnbClone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AirbnbClone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C866A60A28FEECBEAC3E4093 /* Pods_AirbnbClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirbnbClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0493B2701B048FFB73586B8 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		DC80AADAE924D64C24A59A82 /* Pods-AirbnbClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbnbClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirbnbClone/Pods-AirbnbClone.release.xcconfig"; sourceTree = "<group>"; };
 		E425BE91587C4406B7E81E95 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
@@ -354,7 +354,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				D5EF3E064C714B5D871DCB3D /* libRNVectorIcons.a in Frameworks */,
 				C452170ACBE5427096825446 /* libAirMaps.a in Frameworks */,
-				BE8842EA6245700B8FCB8CC0 /* libPods-AirbnbClone.a in Frameworks */,
+				7D0F408472B5D22EDE296AD9 /* Pods_AirbnbClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,7 +474,7 @@
 		20CBBF7D3B8FB3748740767E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BA05F392AC71AC896451B7CD /* libPods-AirbnbClone.a */,
+				C866A60A28FEECBEAC3E4093 /* Pods_AirbnbClone.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1037,9 +1037,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AirbnbClone/Pods-AirbnbClone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

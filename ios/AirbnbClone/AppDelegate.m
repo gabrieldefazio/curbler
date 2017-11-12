@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
-  [GMSServices provideAPIKey:@"AIzaSyDb-4z7h3CTnAynyJb2uur889IoFADpSyg"];
+  [GMSServices provideAPIKey:@"AIzaSyDb-4z7h3CTnAynyJb2uur889IoFADpSyg"];react-native run-ios
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 

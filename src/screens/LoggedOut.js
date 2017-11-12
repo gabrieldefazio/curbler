@@ -37,11 +37,6 @@ export default class LoggedOut extends Component {
     return (
       <View style={styles.wrapper}>
         <View style={styles.welcomeWrapper}>
-          <Image
-            style={styles.logo}
-            source={require('../img/airbnb-logo.png')}
-          />
-          <Text style={styles.welcomeText}>Welcome to Airbnb.</Text>
           <RoundedButton
             text="Continue with Facebook"
             callback={this.continueWithFacebook}
